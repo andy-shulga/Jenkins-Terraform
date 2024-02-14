@@ -8,7 +8,7 @@ pipeline {
         stage('Plan') {
             steps {
                 script {
-                    sh 'cd terraform/ && terraform init && terraform plan -out tfplan'
+                    sh 'cd terraform/ && terraform init && terraform apply -out tfplan'
                 }
             }
         }
