@@ -7,6 +7,13 @@ pipeline {
 
     }
     stages {
+        stage('AWS CLI') {
+            steps {
+                script {
+                    sh 'sudo apt install awscli'
+                }
+            }
+        }
         stage('Plan') {
             steps {
                 script {
