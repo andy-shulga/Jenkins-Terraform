@@ -20,8 +20,8 @@ pipeline {
                     sh 'aws ec2 run-instances \
                         --image-id ami-0c7217cdde317cfec \
                         --instance-type t2.micro \
-                        --subnet-id subnet-06c05d33b112199c1 \
-                        --security-group-ids sg-015a208da56706304 \
+                        --subnet-id subnet-0aab1365689b201dd \
+                        --security-group-ids sg-0c65867ee92463f3b \
                         --iam-instance-profile Arn=arn:aws:iam::724183212105:instance-profile/SSM \
                         --count 1'
                 }
