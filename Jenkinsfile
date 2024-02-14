@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     sh 'aws ec2 run-instances \
-                        --image-id ami-0ce2cb35386fc22e9 \
+                        --image-id ami-0c7217cdde317cfec \
                         --instance-type t2.micro \
                         --subnet-id subnet-06c05d33b112199c1 \
                         --security-group-ids sg-015a208da56706304 \
