@@ -10,7 +10,8 @@ pipeline {
         stage('AWS CLI') {
             steps {
                 script {
-                    sh 'apt install awscli'
+                    sh 'apt install awscli \
+                        --aws --version'
                 }
             }
         }
